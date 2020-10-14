@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Balance</title>
+</head>
+<body>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th> CNP </th>
+            <th> Name </th>
+            <th> Balance RON </th>
+            <th> Balance EURO </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:object="${client}">
+            <td><span th:text="${client.CNP}"> CNP </span></td>
+            <td><span th:text="${client.clientName}"> Client name </span></td>
+            <td><span th:text="${client.RON}"> Balance RON </span></td>
+            <td><span th:text="${client.EURO}"> Balance EURO </span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

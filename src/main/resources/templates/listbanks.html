@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>list of banks</title>
+</head>
+<body>
+<div style="text-align: center;">
+<table>
+    <thead>
+    <tr>
+        <th> Name </th>
+        <th> Type </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${banksLIST.empty}">
+        <td colspan="2"> No Banks Available </td>
+    </tr>
+    <tr th:each="bank : ${banksLIST}">
+        <td><span th:text="${bank.name}"> Name </span></td>
+        <td><span th:text="${bank.type}"> Bank type </span></td>
+    </tr>
+    </tbody>
+</table>
+
+</div>
+</body>
+</html>

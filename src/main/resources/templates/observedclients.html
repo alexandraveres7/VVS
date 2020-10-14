@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List of clients being observed by IRS</title>
+</head>
+<body>
+
+
+<table>
+    <thead>
+    <tr>
+        <th> CNP </th>
+        <th> Client name </th>
+        <th> Balance RON </th>
+        <th> Balance EURO </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${observedclients.empty}">
+        <td colspan="2"> No IRS Clients Available </td>
+    </tr>
+    <tr th:each="client : ${observedclients}">
+        <td><span th:text="${client.CNP}"> CNP </span></td>
+        <td><span th:text="${client.clientName}"> Client name </span></td>
+        <td><span th:text="${client.RON}"> Balance RON </span></td>
+        <td><span th:text="${client.EURO}"> Balance EURO </span></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add client to IRS</title>
+</head>
+<body>
+
+<div class="container">
+    <form method="post" modelAttribute="client" class="form-addobservedclient" action="/addobservedclient">
+        <h2 class="form-addclient-heading" >Add IRS client</h2>
+
+        <div class="form-group ${error != null ? 'has-error' : ''}">
+            <input name="CNP" type="text" class="form-control" placeholder="CNP"
+                   autofocus="true"/>
+            <input name="clientName" type="text" class="form-control" placeholder="Name"/>
+
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+    </form>
+</div>
+
+
+</body>
+</html>

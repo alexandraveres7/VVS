@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>remove an account</title>
+</head>
+<body>
+
+<div class="container">
+    <form method="post" modelAttribute="CNP" class="form-removeclient" action="/removeClient">
+        <h2 class="form-removeclient-heading" >Remove an account</h2>
+        <div class="form-group ${error != null ? 'has-error' : ''}">
+            <input name="CNP" type="text" class="form-control" placeholder="CNP:"
+                   autofocus="true"/>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Delete</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Client account balance</title>
+</head>
+<body>
+
+<form th:action="@{/checkbalance}" method="post">
+    <div class="form-group" >
+        <div class="form-group">
+            <label>Please enter your National ID Number </label>
+            <span class="input-group-addon"></span>
+            <input th:value="${CNP}" type="text" name="CNP" id="CNP" class="form-control" aria-label="CNP "/>
+        </div>
+    </div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Check</button>
+</form>
+
+</body>
+</html>

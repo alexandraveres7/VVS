@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new bank</title>
+</head>
+<body>
+
+<div class="container">
+    <form method="post" modelAttribute="bank" class="form-addbank" action="/addBank">
+        <h2 class="form-addbank-heading" >Add bank</h2>
+        <div class="form-group ${error != null ? 'has-error' : ''}">
+            <input name="name" type="text" class="form-control" placeholder="Name"
+                   autofocus="true"/>
+            <select name="type">
+                <option value="International">International</option>
+            </select>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

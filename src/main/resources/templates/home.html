@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head><title>Home Page</title></head>
+<body style="background-color:lightpink;">
+<h1>Hello !</h1>
+<p>Welcome to <span th:text="${appName}"></span></p>
+
+<p class="text-center">If you already have a bank account:
+    <a href="/deposit">Deposit</a> ,
+    <a href="/withdraw">Withdraw</a> or
+    <a href="/removeClient">Delete Account</a>
+</p>
+
+<p class="text-center">If you don't have one, register here <a href="/addClient">New Client</a> </p>
+</body>
+</html>
+
