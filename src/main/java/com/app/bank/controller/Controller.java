@@ -69,9 +69,12 @@ public class Controller {
 
     @PostMapping("/removeBank")
     public String removeBANK(@ModelAttribute("name") String name){
-        bankService.removeBank(name);
-
-        return "redirect:/listBanks";
+        try{
+            bankService.removeBank(name);
+            return "redirect:/listBanks";
+        } catch (IllegalArgumentException i){
+            return "deletebankerror";
+        }
     }
 
 
@@ -102,9 +105,12 @@ public class Controller {
 
     @PostMapping("/removeClient")
     public String removeCLIENT(@ModelAttribute("CNP") String CNP){
-           bankClientService.removeClientAccount(CNP);
-
-           return "redirect:/listClients";
+        try{
+            bankClientService.removeClientAccount(CNP);
+            return "redirect:/listClients";
+        } catch (Exception e){
+            return "deleteclienterror";
+        }
     }
 
     @RequestMapping(value = "/listClients", method = RequestMethod.GET)

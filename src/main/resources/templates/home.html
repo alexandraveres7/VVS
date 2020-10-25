@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <head><title>Home Page</title></head>
-<body style="background-color:lightpink;">
-<h1>Hello !</h1>
-<p>Welcome to <span th:text="${appName}"></span></p>
+<body style="background-color:lightpink;margin-left: 40%;margin-top: 400px;">
+
+<h1>Welcome to Mini Bank Application!</h1>
+
 
 <p class="text-center">If you already have a bank account:
     <a href="/deposit">Deposit</a> ,
@@ -12,6 +13,11 @@
 </p>
 
 <p class="text-center">If you don't have one, register here <a href="/addClient">New Client</a> </p>
+
+<p class="text-center">If you are a bank manager <a href="/addBank">New Bank</a> or
+                                                 <a href="/removeBank">Delete Bank</a>
+</p>
+
 </body>
 </html>
 
