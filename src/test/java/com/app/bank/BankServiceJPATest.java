@@ -27,6 +27,7 @@ public class BankServiceJPATest {
     public void setUp(){
         bankService = new BankService();
         bankService.setRepository(bankRepository);
+        bankRepository.deleteAll();
     }
 
     @Test
