@@ -1,0 +1,2 @@
+Am observat in urma analizei cu VisualVm, ca atunci cand adaugam noi utilizatori/banci, este folosita in principal memoria pt byte[], int[], java.lang.Object si
+java.lang.String si char[].
