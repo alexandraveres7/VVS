@@ -1,2 +1,3 @@
-Am observat in urma analizei cu VisualVm, ca atunci cand adaugam noi utilizatori/banci, este folosita in principal memoria pt byte[], int[], java.lang.Object si
+Am observat in urma analizei cu VisualVm, ca atunci cand adaugam noi utilizatori/banci, este folosita in principal memoria pt byte[], int[], java.lang.Object,
 java.lang.String si char[].
+Legat de CPU, este folosit in proportie de 100% de thread-ul creeat de IntelliJ cand rulam aplicatia ( Monitor Ctrl-Break)
