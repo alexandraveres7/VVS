@@ -1,3 +1,10 @@
-Am utilizat SpotBugs si mi-a gasit un singur bug, un camp final din clasa RegularClient care imi sugera sa il fac si static. 
-Sunt putin surprinsa dar si happy in acelasi timp :)
-Pun si screenshot pe git.
+Analiza SpotBugs:
+-SpotBugs mi-a gasit un singur bug, un camp final din clasa RegularClient care imi sugera sa il fac si static.
+-Sunt putin surprinsa dar si happy in acelasi timp :)
+-Pun si screenshot pe git
+
+Analiza Intellij:
+-In urma analizei statice cu IntelliJ, au fost descoperite mai multe warning-uri si foarte multe typos (342), dar nu in codul de backend, ci in
+clasele de html (ceea ce a fost ok deoarece stiam ca nu am refactorizat prea mult codul de UI).
+-In ceea ce priveste codul de backend in Java, am avut cateva warning-uri de import, de coding style si de structura clasei. La code style erau cateva Singleton-uri
+pe care nu le-am facut final (my bad). Chiar e bun tool-ul de analyze, mi s-a parut mai folositor decat SpotBugs, il voi folosi si la proiectele viitoare!
