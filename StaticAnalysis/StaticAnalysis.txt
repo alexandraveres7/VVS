@@ -1,6 +1,5 @@
 Analiza SpotBugs:
 -SpotBugs mi-a gasit un singur bug, un camp final din clasa RegularClient care imi sugera sa il fac si static.
--Sunt putin surprinsa dar si happy in acelasi timp :)
 -Pun si screenshot pe git
 
 Analiza Intellij:
