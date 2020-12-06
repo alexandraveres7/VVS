@@ -94,33 +94,3 @@ public class SeleniumTest {
         //System.out.println(innerText);
     }
 }
-/*
-    @Test
-    public void whenInsertText_thenTextIsDisplayed() {
-        String message = "Hello";
-        WebDriverWait wait = new WebDriverWait(driver, 30, 1000);
-        driver.get(serverUrl);
-        By searchInput = By.id("input-id");
-        wait.until(presenceOfElementLocated(searchInput));
-        driver.findElement(searchInput).sendKeys(message);
-        By searchButton = By.id("greeting-button");
-        wait.until(elementToBeClickable(searchButton));
-        driver.findElement(searchButton).click();
-        assertEquals(message, driver.findElement(By.id("button-pressed"))
-                .getText());
-
-    }
-
-    @Test
-    public void whenTextIsNotInserted_thenTextIsNotDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, 30, 1000);
-        driver.get(serverUrl);
-
-        By searchButton = By.id("greeting-button");
-        wait.until(elementToBeClickable(searchButton));
-        driver.findElement(searchButton).click();
-
-        assertEquals("Error! Please insert a value", driver.findElement(By.id("button-pressed"))
-                .getText());
-
-    }*/
