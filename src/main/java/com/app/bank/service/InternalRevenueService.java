@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 @Service
 public class InternalRevenueService implements ClientAccountManager {
-    private static InternalRevenueService irs = new InternalRevenueService();
-    private ArrayList<Client> observedClients = new ArrayList<>();
+    private static final InternalRevenueService irs = new InternalRevenueService();
+    private final ArrayList<Client> observedClients = new ArrayList<>();
 
     public static InternalRevenueService getInstance()
     {

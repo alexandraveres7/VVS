@@ -10,8 +10,10 @@
     <form method="post" modelAttribute="name" class="form-removebank" action="/removeBank">
         <h2 class="form-removebank-heading" >Remove a bank</h2>
         <div class="form-group ${error != null ? 'has-error' : ''}">
-            <input name="name" type="text" class="form-control" placeholder="Name:"
-                   autofocus="true"/>
+            <label>
+                <input name="name" type="text" class="form-control" placeholder="Name:"
+                       autofocus="true"/>
+            </label>
 
             <button class="btn btn-lg btn-primary btn-block" type="submit">Delete</button>
         </div>

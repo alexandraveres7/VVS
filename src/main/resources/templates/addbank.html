@@ -11,11 +11,15 @@
     <form method="post" modelAttribute="bank" class="form-addbank" action="/addBank">
         <h2 class="form-addbank-heading" >Add bank</h2>
         <div class="form-group ${error != null ? 'has-error' : ''}">
-            <input name="name" type="text" class="form-control" placeholder="Name"
-                   autofocus="true"/>
-            <select name="type">
-                <option value="International">International</option>
-            </select>
+            <label>
+                <input name="name" type="text" class="form-control" placeholder="Name"
+                       autofocus="true"/>
+            </label>
+            <label>
+                <select name="type">
+                    <option value="International">International</option>
+                </select>
+            </label>
 
             <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
         </div>

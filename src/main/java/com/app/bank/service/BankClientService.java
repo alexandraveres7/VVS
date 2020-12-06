@@ -13,7 +13,7 @@ public class BankClientService implements BankClientAccountManager {
    @Autowired
     private BankClientRepository clients;
 
-    private InternalRevenueService internalRevenueService = InternalRevenueService.getInstance();
+    private final InternalRevenueService internalRevenueService = InternalRevenueService.getInstance();
 
     public void registerClient(Client client){
         clients.save(client);

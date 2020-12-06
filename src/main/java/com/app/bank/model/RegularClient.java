@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 @Entity
 public class RegularClient extends Client {
 
-    private final String TYPE = "Regular";
-
     public RegularClient(){
     }
 
@@ -14,5 +12,7 @@ public class RegularClient extends Client {
         super(CNP, clientName);
     }
 
-    public String getTYPE() { return TYPE; }
+    public String getTYPE() {
+        String TYPE = "Regular";
+        return TYPE; }
 }

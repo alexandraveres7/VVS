@@ -1,0 +1,8 @@
+platform=1597135892000
+cluster.visualvm=1597135884000
+user=1597135892000
+crc=7
+locale=en_US
+branding=visualvm
+java.version=11.0.6
+java.vm.version=11.0.6+8-LTS

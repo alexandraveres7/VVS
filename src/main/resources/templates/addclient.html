@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <title>add client</title>
+    <title>New client</title>
 </head>
 <body style="margin-left: 40%; margin-top: 400px;">
 
@@ -11,13 +11,17 @@
         <h2 class="form-addclient-heading" >Add client</h2>
 
         <div class="form-group ${error != null ? 'has-error' : ''}">
-            <input name="CNP" type="text" class="form-control" placeholder="CNP"
-                   autofocus="true"/>
-            <input name="clientName" type="text" class="form-control" placeholder="Name"/>
+            <label>
+                <input name="CNP" type="text" class="form-control" placeholder="CNP"
+                       autofocus="true"/>
+            </label>
+            <label>
+                <input name="clientName" type="text" class="form-control" placeholder="Name"/>
+            </label>
 
         </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+        <button id="submit-button" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
     </form>
 </div>
 

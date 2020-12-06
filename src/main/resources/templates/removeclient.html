@@ -10,8 +10,10 @@
     <form method="post" modelAttribute="CNP" class="form-removeclient" action="/removeClient">
         <h2 class="form-removeclient-heading" >Remove an account</h2>
         <div class="form-group ${error != null ? 'has-error' : ''}">
-            <input name="CNP" type="text" class="form-control" placeholder="CNP"
-                   autofocus="true"/>
+            <label>
+                <input name="CNP" type="text" class="form-control" placeholder="CNP"
+                       autofocus="true"/>
+            </label>
 
             <button class="btn btn-lg btn-primary btn-block" type="submit">Delete</button>
         </div>
