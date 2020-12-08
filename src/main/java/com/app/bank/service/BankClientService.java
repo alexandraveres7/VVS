@@ -10,13 +10,17 @@ import java.util.List;
 @Service
 public class BankClientService implements BankClientAccountManager {
 
-   @Autowired
+    @Autowired
     private BankClientRepository clients;
 
     private final InternalRevenueService internalRevenueService = InternalRevenueService.getInstance();
 
     public void registerClient(Client client){
-        clients.save(client);
+        if (!client.getClientName().equals("") && !client.getCNP().equals("") && client.getCNP().length() == 13  )
+            clients.save(client);
+        else{
+            throw new IllegalArgumentException();
+        }
     }
 
     public void removeClientAccount(String CNP) {

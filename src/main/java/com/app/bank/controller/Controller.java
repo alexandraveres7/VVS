@@ -86,14 +86,13 @@ public class Controller {
     }
 
     @PostMapping("/addClient")
-    public String addCLIENT(@ModelAttribute("client") RegularClient client, BindingResult bindingResult){
-        bankClientService.registerClient(client);
-
-        if (bindingResult.hasErrors()) {
-            return "addClient";
+    public String addCLIENT(@ModelAttribute("client") RegularClient client){
+        try{
+            bankClientService.registerClient(client);
+            return "redirect:/listClients";
+        } catch (IllegalArgumentException i) {
+            return "addclienterror";
         }
-
-        return "redirect:/listClients";
     }
 
     @GetMapping("/removeClient")
